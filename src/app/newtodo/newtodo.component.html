@@ -1,0 +1,17 @@
+<form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label>Otsikko</mat-label>
+      <input formControlName="title" matInput placeholder="Tehtävän otsikko">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label>Teksti</mat-label>
+      <input formControlName="text" matInput placeholder="Tehtävä">
+    </mat-form-field>
+  </p>
+  <button mat-raised-button mat-dialog-close color="warn">Peruuta</button>
+  <button *ngIf="!editing" mat-raised-button mat-dialog-close color="primary" type="submit">Tallenna</button>
+  <button *ngIf="editing" mat-raised-button mat-dialog-close color="primary" type="submit">Päivitä</button>
+</form>

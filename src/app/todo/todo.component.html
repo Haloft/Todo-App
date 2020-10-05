@@ -1,0 +1,6 @@
+<div class="teksti">
+    <h3> {{todo.text}}</h3>
+    <mat-icon (click)="done(id, todo.done)">done_outline</mat-icon>
+    <mat-icon (click)="openDialog()" color="green">create</mat-icon>
+    <mat-icon (click)="delTodo(id)" color="warn">delete</mat-icon>
+</div>

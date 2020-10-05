@@ -1,0 +1,13 @@
+.side {
+  background-color: rgb(238, 238, 238);
+  height: 90vh;
+}
+
+.conte {
+  height: 90vh;
+  border: 1px solid black;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
